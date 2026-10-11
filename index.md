@@ -32,7 +32,9 @@ forest—he might be bouldering.
 
 ## Research
 
+<div class="paper-lists" markdown="0">
 {% include papers.html %}
+</div>
 
 </section>
 

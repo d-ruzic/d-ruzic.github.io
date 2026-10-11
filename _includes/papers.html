@@ -2,7 +2,8 @@
 {% assign groups = "working|Working Papers and Work in Progress,published|Publications and Accepted Papers" | split: "," %}
 {% for g in groups %}
   {% assign parts = g | split: "|" %}
-  {% assign list = site.data.papers[parts[0]] %}
+  {% assign key = parts[0] | strip %}
+  {% assign list = site.data.papers[key] %}
   <h3>{{ parts[1] }}</h3>
   <ul class="papers">
   {% for p in list %}

@@ -11,5 +11,7 @@ description: >-
 url: "https://d-ruzic.github.io"
 
 markdown: kramdown
+kramdown:
+  auto_ids: false
 exclude:
   - README.md
