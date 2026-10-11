@@ -1,0 +1,15 @@
+# Site-wide settings. GitHub Pages reads this file when it builds the site.
+title: "Dimitrije Ruzic"
+position: "Associate Professor of Economics"
+institution: "INSEAD"
+email: "dimitrije.ruzic@insead.edu"
+cv: "/papers/Ruzic_CV_Web.pdf"
+description: >-
+  Dimitrije Ruzic — Associate Professor of Economics at INSEAD. Research in
+  macroeconomics and international trade: how differences across firms shape
+  productivity, the allocation of resources, and inequality.
+url: "https://d-ruzic.github.io"
+
+markdown: kramdown
+exclude:
+  - README.md

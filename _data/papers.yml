@@ -1,0 +1,198 @@
+# Research papers, shown on the Research section of the site.
+#
+# To add a paper: copy an existing entry (from "- title:" down to its last
+# line), paste it where it should appear, and edit. Indentation matters:
+# keep the two spaces in front of each field.
+#
+#   title     paper title
+#   authors   as it should appear
+#   status    e.g. "Accepted 2026" (optional)
+#   journal   e.g. "Journal of Political Economy" (optional)
+#   note      any extra line (optional)
+#   abstract  shown when the reader clicks "Abstract" (optional)
+#   links     list of buttons; "url" can be a PDF in the papers/ folder
+#             (e.g. /papers/My_Paper.pdf) or a full web address
+
+working:
+
+  - title: "Establishments vs Firms: Wage Setting and the (Mis)Allocation of Labor"
+    authors: "Ben Rangnick, Dimitrije Ruzic, Bryan Stuart and Lin Tian"
+
+  - title: "Implications of the Transatlantic Productivity Gap for EU and US Living Standards"
+    authors: "Susanto Basu, John Fernald, Robert Inklaar and Dimitrije Ruzic"
+    note: "In preparation for the Brookings Papers on Economic Activity"
+
+published:
+
+  - title: "Superstars or Supervillains? Large Firms in the South Korean Growth Miracle"
+    authors: "Jaedo Choi, Andrei Levchenko, Dimitrije Ruzic and Younghun Shim"
+    status: "Accepted 2026"
+    journal: "Journal of Political Economy"
+    abstract: >-
+      We quantify the contribution of the largest firms to South Korea's economic
+      performance over the period 1972-2011. Using firm-level historical data, we
+      document a novel fact: firm concentration rose substantially during the
+      growth miracle period. To understand whether rising concentration contributed
+      positively or negatively to South Korean real income, we build a quantitative
+      dynamic heterogeneous-firm small-open-economy model. Our framework accommodates
+      a variety of potential causes and consequences of changing firm concentration:
+      productivity, distortions, selection into exporting, scale economies, and
+      oligopolistic and oligopsonistic market power in domestic goods and labor
+      markets. The model is implemented directly on the firm-level data and inverted
+      to recover the drivers of concentration. We find that most of the differential
+      performance of the top firms is attributable to higher productivity growth
+      rather than increasingly favorable distortions. Exceptional performance of the
+      top 3 firms within each sector relative to the average firms contributed 21.8%
+      to the 2011 real GDP and 6.9% to the net present value of welfare over the
+      period 1972-2011. Thus, the largest Korean firms were superstars rather than
+      supervillains.
+    links:
+      - label: "Working Paper"
+        url: "/papers/CLRS_Superstars_Supervillains_Web.pdf"
+      - label: "NBER Working Paper"
+        url: "https://www.nber.org/papers/w32648"
+      - label: "CEPR Working Paper"
+        url: "https://cepr.org/publications/dp19207"
+
+  - title: "Micro and Macro Perspectives on Production-Based Markups"
+    authors: "John Fernald, Amit Gandhi, Dimitrije Ruzic and James Traina"
+    status: "Accepted 2026"
+    journal: "Journal of Economic Literature"
+    abstract: >-
+      We review the "production approach" to estimating markups, the ratio of price
+      to marginal cost. The approach is scalable. It requires no model of consumer
+      demand or market structure and applies broadly across firms, industries, and
+      time. We organize our review around a simple insight: the production-based
+      markup is a residual. Like the Solow residual, it is clean in theory but
+      potentially contaminated by misspecification and mismeasurement. This framing
+      helps explain why small differences in implementation can produce starkly
+      different results from the same data. In some cases, estimated markups have
+      risen sharply. In others, they have not. We provide conceptual rationales for
+      these disagreements, offer practical guidance on data and estimation, and call
+      for greater transparency about how much of the variation attributed to markups
+      may instead reflect technology.
+    links:
+      - label: "Working Paper"
+        url: "/papers/FGRT_Markups_Web.pdf"
+      - label: "CEPR Working Paper"
+        url: "https://cepr.org/publications/dp20628"
+
+  - title: "The Factor Bias of External Inputs: Implications for Substitution between Capital and Labor"
+    authors: "Dimitrije Ruzic"
+    status: "Accepted 2026"
+    journal: "Review of Economics and Statistics"
+    abstract: >-
+      This paper reevaluates the longstanding debate on capital-labor substitution
+      by examining the role of external inputs: raw materials, intermediate goods and
+      services, imports, offshoring. Both a meta analysis (analyzing existing
+      estimates of substitution) and direct inference (using U.S. data for
+      1963-2016) indicate that external inputs disproportionately displace labor.
+      These findings imply (1) that the capital-labor ratio responds 40-80% more
+      strongly to the price of labor than to the price of capital, (2) that value
+      added cannot be modeled separably from gross output, and (3) that historical
+      disagreements regarding substitution can be recast as an omitted variable bias
+      involving external inputs.
+    links:
+      - label: "Working Paper"
+        url: "/papers/Ruzic_FBX_Web.pdf"
+      - label: "CEPR Working Paper"
+        url: "https://cepr.org/publications/dp21591"
+
+  - title: "The Productivity Slowdown in Advanced Economies: Common Shocks or Common Trends?"
+    authors: "John Fernald, Robert Inklaar and Dimitrije Ruzic"
+    status: "Accepted 2023"
+    journal: "Review of Income and Wealth, 2024"
+    abstract: >-
+      This paper reviews advanced-economy productivity developments in recent
+      decades. We focus primarily on the facts about, and explanations for, the
+      mid-2000s labor-productivity slowdown in large European countries and the
+      United States. Slower total factor productivity (TFP) growth was the proximate
+      cause of the slowdown. This conclusion is robust to measurement challenges
+      including the role of intangible assets, rankings of productivity levels, and
+      data revisions. We contrast two main narratives for the stagnating TFP
+      frontier: The shock of the Global Financial Crisis; and a common slowdown in
+      TFP trends. Distinguishing these two empirically is hard, but the
+      pre-recession timing of the U.S. slowdown suggests an important role for the
+      common-trend explanation. We also discuss the unusual pattern of labor
+      productivity growth since the start of the Covid-19 pandemic. Although it is
+      early, there is little evidence so far that the large pandemic shock has
+      changed the slow pre-pandemic trajectory of labor-productivity growth.
+    links:
+      - label: "Published Version"
+        url: "https://onlinelibrary.wiley.com/doi/10.1111/roiw.12690"
+      - label: "Working Paper"
+        url: "/papers/FIR_Shocks_Trends_Web.pdf"
+
+  - title: "Firms and Collective Reputation: a Study of the Volkswagen Emissions Scandal"
+    authors: "Rüdiger Bachmann, Gabriel Ehrlich, Ying Fan, Dimitrije Ruzic and Benjamin Leard"
+    status: "Accepted 2022"
+    journal: "Journal of the European Economic Association 21(2), 2023"
+    abstract: >-
+      This paper uses the 2015 Volkswagen (VW) emissions scandal as a natural
+      experiment to provide evidence that collective reputation externalities are
+      economically significant. Using a combination of difference-in-differences and
+      demand estimation approaches, we document a spillover effect from the scandal
+      to the non-VW German auto manufacturers. The spillover amounts to an average
+      drop of $2,057 in consumer valuations of these manufacturers' vehicles and to a
+      34.6% reduction in their annual sales. We substantiate our interpretation that
+      the estimates reflect a reputation spillover using data on internet search
+      behavior and direct measures of consumer sentiment from Twitter.
+    links:
+      - label: "Published Version"
+        url: "https://doi.org/10.1093/jeea/jvac046"
+      - label: "Working Paper"
+        url: "/papers/BEFRL_current.pdf"
+      - label: "NBER Working Paper"
+        url: "https://www.nber.org/papers/w26117"
+
+  - title: "Returns to Scale, Productivity Measurement, and Trends in U.S. Manufacturing Misallocation"
+    authors: "Dimitrije Ruzic and Sui-Jade Ho"
+    status: "Accepted 2021"
+    journal: "Review of Economics and Statistics 105(5), 2023"
+    abstract: >-
+      Aggregate productivity suffers when workers and machines are not matched with
+      their most productive uses. This paper builds a model that features
+      industry-specific markups, industry-specific returns to scale, and
+      establishment-specific distortions, and uses it to measure the extent of this
+      misallocation in the economy. Applying the model to restricted U.S. census
+      microdata on the manufacturing sector suggests that misallocation declined by
+      13% between 1982 and 2007. The jointly-estimated markup and returns to scale
+      parameters vary substantially across industries. Furthermore, while the
+      average markup has been relatively constant, the average returns to scale
+      declined over this period. The finding of declining misallocation starkly
+      contrasts the 29% increase implied by the widely used Hsieh & Klenow (2009)
+      model, which assumes that all establishments charge the same markup and have
+      constant returns to scale. Accounting for the variation in markups and returns
+      to scale leads to the divergence of misallocation estimates in this paper from
+      those implied by the Hsieh-Klenow model.
+    links:
+      - label: "Published Version"
+        url: "https://doi.org/10.1162/rest_a_01121"
+      - label: "Working Paper"
+        url: "/papers/Ruzic_JMP_Web.pdf"
+
+  - title: "Globalization and Top Income Shares"
+    authors: "Lin Ma and Dimitrije Ruzic"
+    status: "Accepted 2020"
+    journal: "Journal of International Economics 125, 2020"
+    abstract: >-
+      This paper documents empirically that access to global markets is associated
+      with a higher executive-to-worker pay ratio within the firm. It then uses
+      China's 2001 accession to the World Trade Organization as a trade shock to show
+      that firms that exported to China prior to 2001 subsequently exported more,
+      grew larger, and grew more unequal in terms of executive-to-worker pay. To
+      evaluate analytically and quantitatively the impacts of globalization on top
+      income inequality, this paper builds a model with heterogeneous firms,
+      occupational choice, and executive compensation. In the model, executive
+      compensation grows with the size of the firm, while the wage paid to ordinary
+      workers is determined in a country-wide labor market. As a result, the extra
+      profits earned in the foreign markets benefit the executives more than the
+      average workers. We calibrate the model to the U.S. economy and match the
+      income distribution closely in the data. Counterfactual exercises suggest that
+      trade and FDI liberalizations can explain around 44 percent of the surge in top
+      0.1 percent income shares in the data between 1988 and 2008.
+    links:
+      - label: "Published Version"
+        url: "https://doi.org/10.1016/j.jinteco.2020.103312"
+      - label: "Working Paper"
+        url: "/papers/MR_Globalization_Income_Share_Web.pdf"

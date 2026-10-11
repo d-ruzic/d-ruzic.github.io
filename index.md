@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<!--
+  The text of the site. Edit the paragraphs below as ordinary text.
+  Papers are not here: they live in _data/papers.yml.
+  Site-wide details (name, title, email, CV file) are in _config.yml.
+-->
+
+<section id="about" class="section" markdown="1">
+
+## About
+
+Dimitrije Ruzic is an Associate Professor of Economics at INSEAD. He obtained an
+A.B. in Economics from Harvard College, an M.Sc. in Econometrics and Mathematical
+Economics from the London School of Economics, and a Ph.D. in Economics from the
+University of Michigan.
+
+His research interests span macroeconomics and international trade. Through his
+projects he works to understand how differences across firms shape macroeconomic
+outcomes. In the process, he combines models of differentiated firms with firm
+microdata to explore questions related to productivity trends, the allocation of
+resources, inequality, and the spillovers of firm reputation.
+
+If you cannot find him in his office, please look around the Fontainebleau
+forest—he might be bouldering.
+
+</section>
+
+<section id="research" class="section" markdown="1">
+
+## Research
+
+{% include papers.html %}
+
+</section>
+
+<section id="teaching" class="section" markdown="1">
+
+## Teaching
+
+### INSEAD
+
+- MBA: Macroeconomics in the Global Economy
+- Executive MBA: Macroeconomics
+- PhD: Econometrics B
+- Executive Programs: Global Economic Outlook
+{: .plain}
+
+*Poets & Quants' Best 40-Under-40 MBA Professors: 2025*<br>
+*Dean's Commendation for Excellence in MBA Teaching: 2021, 2022, 2025*
+
+### University of Michigan
+
+- Undergraduate: Intermediate Macroeconomics
+{: .plain}
+
+*Letter of Commendation for Excellence in Teaching: 2013*
+
+</section>
+
+<section id="contact" class="section" markdown="1">
+
+## Contact
+
+INSEAD<br>
+1 Boulevard de Constance<br>
+77300 Fontainebleau<br>
+France
+
+[dimitrije.ruzic@insead.edu](mailto:dimitrije.ruzic@insead.edu)
+
+</section>
