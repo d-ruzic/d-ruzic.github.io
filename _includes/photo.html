@@ -1,7 +1,15 @@
-<div class="about-photo" markdown="0">
+{% comment %}
+  Your photo. Where it appears is set by photo_position: "bio" (next to the
+  About text, the default), "name" (beside your name) or "above" (above your
+  name). Each spot calls this file with where="..."; only the matching one shows.
+{% endcomment %}
+{% assign photo_position = page.photo_position | default: "bio" %}
+{% if include.where == photo_position %}
+<div class="about-photo photo-at-{{ include.where }}" markdown="0">
 {% if site.photo and site.photo != "" %}
   <img src="{{ site.photo }}" alt="Photo of {{ site.title }}" width="240" height="240">
 {% else %}
   <span class="photo-placeholder" aria-hidden="true">DR</span>
 {% endif %}
 </div>
+{% endif %}

@@ -10,7 +10,7 @@ layout: default
 
 <section id="about" class="section about" markdown="1">
 
-{% include photo.html %}
+{% include photo.html where="bio" %}
 
 <div class="about-text" markdown="1">
 
