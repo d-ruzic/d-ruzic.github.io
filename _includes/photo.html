@@ -1,7 +1,7 @@
 {% comment %}
   Your photo. Where it appears is set by photo_position: "bio" (next to the
-  About text, the default), "name" (beside your name) or "above" (above your
-  name). Each spot calls this file with where="..."; only the matching one shows.
+  About text, the default), "name" (beside your name), "above" (above your
+  name) or "below" (between your titles and the About text). Each spot calls this file with where="..."; only the matching one shows.
 {% endcomment %}
 {% assign photo_position = page.photo_position | default: "bio" %}
 {% if include.where == photo_position %}

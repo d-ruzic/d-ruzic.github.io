@@ -72,6 +72,9 @@ a:hover, a:focus { color: #1d9b6c; }
 /* Photo above the name (photo_position: above) */
 .photo-at-above { margin: 0 auto 28px; width: 200px; }
 .photo-at-above img, .photo-at-above .photo-placeholder { width: 200px; height: 200px; }
+/* Photo below the titles (photo_position: below) */
+.photo-at-below { margin: 36px auto 0; width: 200px; }
+.photo-at-below img, .photo-at-below .photo-placeholder { width: 200px; height: 200px; }
 
 /* ---------- About: photo beside the bio ---------- */
 .section.about {
@@ -150,5 +153,7 @@ details[open] summary::after { content: " \2212"; }
   .about-photo img, .photo-placeholder { width: 180px; height: 180px; }
   .intro-photo-name .intro-body { flex-direction: column; gap: 24px; text-align: center; }
   .photo-at-above { width: 160px; margin-bottom: 20px; }
-  .photo-at-above img, .photo-at-above .photo-placeholder { width: 160px; height: 160px; }
+  .photo-at-below { width: 160px; margin-top: 24px; }
+  .photo-at-above img, .photo-at-above .photo-placeholder,
+  .photo-at-below img, .photo-at-below .photo-placeholder { width: 160px; height: 160px; }
 }
