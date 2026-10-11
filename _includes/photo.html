@@ -1,0 +1,7 @@
+<div class="about-photo" markdown="0">
+{% if site.photo and site.photo != "" %}
+  <img src="{{ site.photo }}" alt="Photo of {{ site.title }}" width="240" height="240">
+{% else %}
+  <span class="photo-placeholder" aria-hidden="true">DR</span>
+{% endif %}
+</div>

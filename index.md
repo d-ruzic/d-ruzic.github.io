@@ -8,9 +8,11 @@ layout: default
   Site-wide details (name, title, email, CV file) are in _config.yml.
 -->
 
-<section id="about" class="section" markdown="1">
+<section id="about" class="section about" markdown="1">
 
-## About
+{% include photo.html %}
+
+<div class="about-text" markdown="1">
 
 Dimitrije Ruzic is an Associate Professor of Economics at INSEAD. He obtained an
 A.B. in Economics from Harvard College, an M.Sc. in Econometrics and Mathematical
@@ -25,6 +27,8 @@ resources, inequality, and the spillovers of firm reputation.
 
 If you cannot find him in his office, please look around the Fontainebleau
 forest—he might be bouldering.
+
+</div>
 
 </section>
 

@@ -47,28 +47,40 @@ a:hover, a:focus { color: #1d9b6c; }
 .nav-brand { font-weight: 700; font-size: 16px; }
 .nav-links { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 13px; }
 
-/* ---------- Full-screen intro ---------- */
+/* ---------- Intro: big name and title, followed directly by About ---------- */
 .intro {
-  min-height: 100vh;
   display: flex; align-items: center; justify-content: center;
   text-align: center;
-  padding: 120px 16px 40px;
+  padding: 120px 16px 10px;
   background:
-    radial-gradient(ellipse at center, #2b2b2b 0%, #000 70%);
+    radial-gradient(ellipse at 50% 60%, #2b2b2b 0%, #000 70%);
 }
 .intro h1 {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   font-family: var(--sans); font-weight: 700;
   text-transform: uppercase; letter-spacing: 3px;
   font-size: clamp(36px, 8vw, 88px); line-height: 1.1;
 }
-.intro-text { font-size: clamp(18px, 2.5vw, 24px); margin: 0 0 40px; }
-.intro-arrow {
-  display: inline-block; width: 64px; height: 64px; line-height: 50px;
-  border: 2px solid var(--text); border-radius: 50%;
-  color: var(--text); font-size: 36px;
+.intro-text { font-size: clamp(18px, 2.5vw, 24px); margin: 0; color: var(--muted); }
+
+/* ---------- About: photo beside the bio ---------- */
+.section.about {
+  display: flex; align-items: flex-start; gap: 40px;
+  padding-top: 50px;
+  scroll-margin-top: 80px;
 }
-.intro-arrow:hover { border-color: var(--accent); color: var(--accent); }
+.about-photo { flex: 0 0 220px; }
+.about-photo img, .photo-placeholder {
+  display: block; width: 220px; height: 220px;
+  border-radius: 50%; object-fit: cover;
+  border: 2px solid var(--line);
+}
+.photo-placeholder {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--panel); color: var(--muted);
+  font-family: var(--sans); font-weight: 700; font-size: 64px; letter-spacing: 4px;
+}
+.about-text p:first-child { margin-top: 0; }
 
 /* ---------- Content sections ---------- */
 .section {
@@ -122,4 +134,8 @@ details[open] summary::after { content: " \2212"; }
   .nav-links { gap: 2px 14px; font-size: 12px; }
   h2 { font-size: 28px; }
   .section { padding-top: 110px; }
+  .intro { padding-top: 130px; }
+  .section.about { flex-direction: column; align-items: center; gap: 24px; padding-top: 36px; }
+  .about-photo { flex-basis: auto; }
+  .about-photo img, .photo-placeholder { width: 180px; height: 180px; }
 }
