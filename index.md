@@ -14,9 +14,9 @@ layout: default
 
 <div class="about-text" markdown="1">
 
-Dimitrije Ruzic is an Associate Professor of Economics at INSEAD and a Research Affiliate of the Centre for Economic Policy Research (CEPR). 
+Dimitrije Ruzic is an Associate Professor of Economics at INSEAD and a Research Affiliate of the Centre for Economic Policy Research (CEPR).
 
-His research spans macroeconomics and international trade. He works to understand how differences across firms shape macroeconomic outcomes, combining models of differentiated firms with firm microdata to provide new insights into productivity, inequality, and market power. His recent work has been published in academic outlets such as the Journal of Political Economy, the Journal of Economic Literature, the Review of Economics and Statistics, and the Journal of the European Economic Association.
+His research spans macroeconomics and international trade. He works to understand how differences across firms shape macroeconomic outcomes, combining models of differentiated firms with firm microdata to provide new insights into productivity, inequality, and market power. His recent work has appeared in journals such as the Journal of Political Economy, the Journal of Economic Literature, the Review of Economics and Statistics, and the Journal of the European Economic Association.
 
 At INSEAD he teaches macroeconomics to MBA, Executive MBA, and executive education participants. For his efforts to make the global economic environment accessible to diverse audiences, he was named among the Best 40-Under-40 MBA Professors by Poets & Quants and among 30 emerging thinkers to watch by Thinkers50. INSEAD MBA students have voted him Best Teacher of a core course, and he has been awarded the Dean's Commendation for Excellence in MBA Teaching multiple times.
 
