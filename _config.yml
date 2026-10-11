@@ -8,7 +8,7 @@ cv: "/papers/Ruzic_CV_Web.pdf"
 # Your photo, shown next to the About text. Put the file in assets/img/ and
 # write its path here, e.g. "/assets/img/ruzic.jpg". Leave empty ("") to show
 # your initials in a circle instead.
-photo: ""
+photo: "/assets/img/ruzic.jpg"
 description: >-
   Dimitrije Ruzic — Associate Professor of Economics at INSEAD. Research in
   macroeconomics and international trade: how differences across firms shape
