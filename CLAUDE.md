@@ -83,17 +83,12 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
 
 ## Still to do
 
-1. **User reviews the site** (desktop + phone) and asks for changes. Ideas raised:
-   - background photo for the intro (e.g. Fontainebleau bouldering), as in
-     Lin's theme — put it in `assets/img/`, keep it < ~300 KB
-   - headshot in the About section
-   - accent colour: light theme with dark royal blue `#1f3c88` is the default (2026-10-12)
-   - intro background: pale blue pencil-style sketches of Pobednik made from
-     Wikimedia Commons photos (CC BY/BY-SA, so the footer credits photographer
-     and licence via `intro_bg:` in `_config.yml`). Default now: Sava river view.
-     After trying a gallery and four more photos, the user kept the Sava view
-     (2026-10-12). Default and settled.
-   - possibly show the user 2–3 alternative layouts/themes before settling
+1. ~~Design~~ **Settled 2026-10-12:** light theme, royal blue `#1f3c88` accent
+   (links, buttons, subheadings), headshot below the titles, Pobednik/Sava
+   sketch background (`intro_bg:` in `_config.yml`, credited in footer), bio
+   justified, CV button under the bio. Trial pages are made as
+   `preview-*.md` (front matter `preview: true` → noindex, no counting) and
+   deleted once the user decides.
 2. ~~Point druzic.com at the site~~ **Done 2026-10-12.** `CNAME` file +
    `url: "https://druzic.com"`; HTTPS certificate approved and enforced; bare,
    www, http and d-ruzic.github.io all land on https://druzic.com.
@@ -101,7 +96,7 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
    `www` → `d-ruzic.github.io.`, TXT `_github-pages-challenge-d-ruzic` (GitHub
    domain verification). Kept: email forwarding (MX `eforward*`, SPF TXT, under
    Mail Settings — user may use @druzic.com addresses) and the
-   `google-site-verification` TXT (remove when the Google Site is retired).
+   `google-site-verification` TXT (ties the domain to Google Search Console — keep).
    Removed: URL redirect `@` and CNAME `www` → ghs.googlehosted.com.
 3. ~~Test from China~~ **Done 2026-10-12** via the Globalping API (probes in
    ~20 Chinese cities, China Telecom/Unicom/Mobile, Alibaba, Tencent): homepage,
@@ -114,7 +109,11 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
    Search Console.
 5. Clone on the other machines when needed:
    `gh repo clone d-ruzic/d-ruzic.github.io ~/projects/d-ruzic.github.io`
-   (Tiberius, Diocletian), and update the repo lists in coffeeproject's CLAUDE.md.
+   (Tiberius, Diocletian), and add it to their lines in coffeeproject's CLAUDE.md.
+6. Not yet confirmed: GitHub domain verification of druzic.com shows
+   "verified" at github.com/settings/pages (TXT record is live).
+7. Optional polish the user may want: favicon, social-share preview image
+   (`og:image`), Google Scholar / RePEc / LinkedIn links in Contact.
 
 ## Progress log
 
