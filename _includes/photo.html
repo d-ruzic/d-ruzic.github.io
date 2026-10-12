@@ -1,9 +1,8 @@
 {% comment %}
-  Your photo. Where it appears is set by photo_position: "bio" (next to the
-  About text, the default), "name" (beside your name), "above" (above your
-  name) or "below" (between your titles and the About text). Each spot calls this file with where="..."; only the matching one shows.
+  Your photo. Where it appears is set by photo_position in _config.yml.
+  Each possible spot calls this file with where="..."; only the matching one shows.
 {% endcomment %}
-{% assign photo_position = page.photo_position | default: "bio" %}
+{% assign photo_position = page.photo_position | default: site.photo_position | default: "below" %}
 {% if include.where == photo_position %}
 <div class="about-photo photo-at-{{ include.where }}" markdown="0">
 {% if site.photo and site.photo != "" %}

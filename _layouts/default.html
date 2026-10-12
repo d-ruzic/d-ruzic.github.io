@@ -18,7 +18,7 @@
   <link rel="preload" href="/assets/fonts/lora.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
 </head>
-<body>
+<body class="theme-{{ page.theme | default: site.theme | default: "dark" }}">
 
   <nav class="nav">
     <a class="nav-brand" href="#top">{{ site.title }}</a>
@@ -31,7 +31,7 @@
     </div>
   </nav>
 
-  <header id="top" class="intro intro-photo-{{ page.photo_position | default: "bio" }}">
+  <header id="top" class="intro intro-photo-{{ page.photo_position | default: site.photo_position | default: "below" }}">
     <div class="intro-body">
       {% include photo.html where="above" %}
       {% include photo.html where="name" %}

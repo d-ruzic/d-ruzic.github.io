@@ -15,9 +15,41 @@
   --muted: #b5b5b5;
   --accent: #42dca3;   /* link colour; change here to restyle the whole site */
   --line: #333;
+  --accent-hover: #1d9b6c;
+  --on-accent: #000;          /* text on a green button when hovered */
+  --nav-bg: rgba(0, 0, 0, 0.85);
+  --nav-line: rgba(255, 255, 255, 0.15);
+  --intro-bg: radial-gradient(ellipse 60% 60% at 50% 45%, #2b2b2b 0%, #000 100%);
   --serif: "Lora", Georgia, "Times New Roman", serif;
   --sans: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
+
+/* Light themes (theme: "light" or "light-band" in _config.yml). The green is
+   a darker shade of the same colour so links stay readable on white. */
+.theme-light, .theme-light-band {
+  --bg: #fff;
+  --panel: #f3f5f4;
+  --text: #111;
+  --muted: #555;
+  --accent: #14855b;
+  --accent-hover: #0b5c3e;
+  --on-accent: #fff;
+  --line: #ddd;
+  --nav-bg: rgba(255, 255, 255, 0.92);
+  --nav-line: rgba(0, 0, 0, 0.12);
+  --intro-bg: #fff;
+}
+/* light-band: white page, but the top bar and the name/photo area stay black */
+.theme-light-band .nav, .theme-light-band .intro {
+  --text: #fff;
+  --muted: #b5b5b5;
+  --accent: #42dca3;
+  --line: #333;
+  --nav-bg: rgba(0, 0, 0, 0.85);
+  --nav-line: rgba(255, 255, 255, 0.15);
+  --intro-bg: radial-gradient(ellipse 60% 60% at 50% 45%, #2b2b2b 0%, #000 100%);
+}
+.theme-light-band .intro { padding-bottom: 50px; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -30,7 +62,7 @@ body {
   line-height: 1.6;
 }
 a { color: var(--accent); text-decoration: none; }
-a:hover, a:focus { color: #1d9b6c; }
+a:hover, a:focus { color: var(--accent-hover); }
 
 /* ---------- Navigation bar ---------- */
 .nav {
@@ -38,8 +70,8 @@ a:hover, a:focus { color: #1d9b6c; }
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
   gap: 4px 24px;
   padding: 14px 24px;
-  background: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  background: var(--nav-bg);
+  border-bottom: 1px solid var(--nav-line);
   font-family: var(--sans); text-transform: uppercase; letter-spacing: 1px;
 }
 .nav a { color: var(--text); }
@@ -52,8 +84,8 @@ a:hover, a:focus { color: #1d9b6c; }
   display: flex; align-items: center; justify-content: center;
   text-align: center;
   padding: 120px 16px 10px;
-  background:
-    radial-gradient(ellipse 60% 60% at 50% 45%, #2b2b2b 0%, #000 100%);
+  background: var(--intro-bg);
+  color: var(--text);
 }
 .intro h1 {
   margin: 0 0 16px;
@@ -124,7 +156,7 @@ ul.papers { list-style: none; padding: 0; margin: 0; }
   font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: 1px;
   color: var(--accent); background: transparent; cursor: pointer;
 }
-.btn:hover, summary:hover { background: var(--accent); color: #000; }
+.btn:hover, summary:hover { background: var(--accent); color: var(--on-accent); }
 summary { list-style: none; }
 summary::-webkit-details-marker { display: none; }
 summary::after { content: " +"; }
