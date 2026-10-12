@@ -109,6 +109,7 @@ a:hover, a:focus { color: var(--accent-hover); }
   font-family: var(--sans); font-weight: 700; font-size: 64px; letter-spacing: 4px;
 }
 .about-text p:first-child { margin-top: 0; }
+.about-text p { text-align: justify; hyphens: auto; }
 
 /* ---------- Content sections ---------- */
 .section {
