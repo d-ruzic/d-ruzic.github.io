@@ -121,6 +121,8 @@ a:hover, a:focus { color: var(--accent-hover); }
 h2, h3 { font-family: var(--sans); text-transform: uppercase; font-weight: 700; }
 h2 { font-size: 34px; letter-spacing: 2px; text-align: center; margin: 0 0 32px; }
 h3 { font-size: 18px; letter-spacing: 1px; margin: 40px 0 16px; color: var(--muted); }
+/* Trial (preview-blue-headings): paper-list subheadings in the accent blue */
+.theme-blue-headings .paper-lists h3 { color: var(--accent); }
 ul.plain { list-style: none; padding: 0; }
 
 /* ---------- Papers ---------- */
