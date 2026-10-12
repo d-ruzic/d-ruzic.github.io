@@ -42,8 +42,12 @@ principles, with everyday analogies. See also `~/projects/coffeeproject/CLAUDE.m
 | `papers/` | The 8 PDFs the old site linked: 7 papers + `Ruzic_CV_Web.pdf` |
 | `README.md` | Short "where to edit what" for the user (excluded from the build) |
 
-The site is one scrolling page (like Lin's), no JavaScript. Abstracts use
-HTML `<details>`.
+The site is one scrolling page (like Lin's). Abstracts use HTML `<details>`.
+The only JavaScript is GoatCounter's visitor counter, self-hosted at
+`assets/js/count.js` (its CDN gc.zgo.at is blocked in China; the counting
+endpoint `druzic.goatcounter.com` is reachable). Turned on/off with
+`goatcounter:` in `_config.yml`; paper buttons and the CV button carry
+`data-goatcounter-click` so downloads are counted. No cookies, so no banner.
 
 ## Design decisions (keep these)
 
@@ -99,9 +103,15 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
    Mail Settings — user may use @druzic.com addresses) and the
    `google-site-verification` TXT (remove when the Google Site is retired).
    Removed: URL redirect `@` and CNAME `www` → ghs.googlehosted.com.
-3. **Test from China**: e.g. `17ce.com` or `ping.chinaz.com` (load the page
-   from servers in several Chinese cities).
-4. **Retire the Google Site** (unpublish it) once druzic.com serves the new site.
+3. ~~Test from China~~ **Done 2026-10-12** via the Globalping API (probes in
+   ~20 Chinese cities, China Telecom/Unicom/Mobile, Alibaba, Tencent): homepage,
+   CV PDF and background image return 200 from most probes in 0.4–3 s; a few
+   China Mobile probes time out on some runs (normal GitHub-Pages-in-China
+   flakiness). Re-test: POST https://api.globalping.io/v1/measurements with
+   `{"type":"http","target":"druzic.com","limit":20,"locations":[{"magic":"China"}],"measurementOptions":{"protocol":"HTTPS"}}`.
+4. ~~Retire the Google Site~~ Unpublished by the user 2026-10-12. Keep the
+   `google-site-verification` TXT at Namecheap: it ties druzic.com to Google
+   Search Console.
 5. Clone on the other machines when needed:
    `gh repo clone d-ruzic/d-ruzic.github.io ~/projects/d-ruzic.github.io`
    (Tiberius, Diocletian), and update the repo lists in coffeeproject's CLAUDE.md.

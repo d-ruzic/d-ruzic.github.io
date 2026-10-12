@@ -22,7 +22,7 @@ At INSEAD he teaches macroeconomics to MBA, Executive MBA, and executive educati
 
 He holds economics degrees from Harvard, the London School of Economics, and the University of Michigan. If you cannot find him in his office, please look around the Fontainebleau forest—he might be bouldering.
 
-<p class="about-cv"><a class="btn" href="{{ site.cv }}">CV</a></p>
+<p class="about-cv"><a class="btn" href="{{ site.cv }}" data-goatcounter-click="{{ site.cv }}" data-goatcounter-title="CV">CV</a></p>
 
 </div>
 

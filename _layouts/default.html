@@ -16,6 +16,12 @@
        third-party resources, so the page loads normally from China. -->
   <link rel="preload" href="/assets/fonts/montserrat.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/lora.woff2" as="font" type="font/woff2" crossorigin>
+  {% if site.goatcounter != "" and site.goatcounter and page.preview != true %}
+  <!-- Visitor counter. The script is a copy kept in this site (GoatCounter's
+       own address is blocked in China); it sends one small "page viewed"
+       message to GoatCounter and sets no cookies. -->
+  <script data-goatcounter="https://{{ site.goatcounter }}.goatcounter.com/count" async src="/assets/js/count.js"></script>
+  {% endif %}
   <link rel="stylesheet" href="/assets/css/style.css?v={{ site.time | date: '%s' }}">
 </head>
 <body class="theme-{{ page.theme | default: site.theme | default: "light" }}">

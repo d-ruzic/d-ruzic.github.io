@@ -22,6 +22,9 @@ intro_bg:
   source: "https://commons.wikimedia.org/wiki/File:The_Victor_and_the_Sava_river.jpg"
   license: "CC BY-SA 4.0"
   license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
+# Visitor statistics (GoatCounter, no cookies). Your stats are at
+# https://<code>.goatcounter.com ; leave empty ("") to switch counting off.
+goatcounter: "druzic"
 description: >-
   Dimitrije Ruzic — Associate Professor of Economics at INSEAD. Research in
   macroeconomics and international trade: how differences across firms shape
