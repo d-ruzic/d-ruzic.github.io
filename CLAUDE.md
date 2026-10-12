@@ -90,24 +90,15 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
      After trying a gallery and four more photos, the user kept the Sava view
      (2026-10-12). Default and settled.
    - possibly show the user 2–3 alternative layouts/themes before settling
-2. **Point druzic.com at the site** (only when the user is happy):
-   - In the repo: add a file `CNAME` containing `druzic.com`; set
-     `url: "https://druzic.com"` in `_config.yml`; push.
-     Or set the custom domain via repo Settings → Pages (creates the same file).
-   - At Namecheap → Domain List → druzic.com → Advanced DNS:
-     - delete the current URL-redirect record(s) and anything else pointing to
-       Google Sites (today: bare `druzic.com` hits a Namecheap redirect server at
-       162.255.119.76 that only works over http; `www` goes to Google Sites)
-     - add 4 **A** records, host `@`: `185.199.108.153`, `185.199.109.153`,
-       `185.199.110.153`, `185.199.111.153`
-     - (optional) 4 **AAAA** records, host `@`: `2606:50c0:8000::153`,
-       `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
-     - **CNAME** record, host `www` → `d-ruzic.github.io.`
-   - Recommended: verify the domain in GitHub (profile Settings → Pages →
-     Add a domain → TXT record at Namecheap) to prevent domain takeover.
-   - Wait for DNS (minutes to a few hours), then tick **Enforce HTTPS** in
-     repo Settings → Pages. Check both `https://druzic.com` and
-     `https://www.druzic.com` work (bare https is broken on the old setup).
+2. ~~Point druzic.com at the site~~ **Done 2026-10-12.** `CNAME` file +
+   `url: "https://druzic.com"`; HTTPS certificate approved and enforced; bare,
+   www, http and d-ruzic.github.io all land on https://druzic.com.
+   Namecheap Advanced DNS now: 4 A records `@` → 185.199.108–111.153, CNAME
+   `www` → `d-ruzic.github.io.`, TXT `_github-pages-challenge-d-ruzic` (GitHub
+   domain verification). Kept: email forwarding (MX `eforward*`, SPF TXT, under
+   Mail Settings — user may use @druzic.com addresses) and the
+   `google-site-verification` TXT (remove when the Google Site is retired).
+   Removed: URL redirect `@` and CNAME `www` → ghs.googlehosted.com.
 3. **Test from China**: e.g. `17ce.com` or `ping.chinaz.com` (load the page
    from servers in several Chinese cities).
 4. **Retire the Google Site** (unpublish it) once druzic.com serves the new site.
@@ -120,3 +111,4 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
 | Date | Milestone |
 |---|---|
 | 2026-10-11 | Site built and published at d-ruzic.github.io (from a coffeeproject session on Livia) |
+| 2026-10-12 | Light theme, royal blue, Pobednik (Sava) sketch background, CV button; druzic.com live on GitHub Pages with HTTPS |
