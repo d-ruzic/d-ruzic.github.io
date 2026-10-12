@@ -55,7 +55,7 @@ He holds economics degrees from Harvard, the London School of Economics, and the
 
 ### University of Michigan
 
-- Undergraduate: Intermediate Macroeconomics
+- Intermediate Macroeconomics (Undergraduate)
 {: .plain}
 
 *Letter of Commendation for Excellence in Teaching: 2013*
