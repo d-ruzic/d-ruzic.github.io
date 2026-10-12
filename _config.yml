@@ -13,6 +13,15 @@ photo: "/assets/img/ruzic-2022.jpg"
 # "name" (beside your name), "above" (above your name) or "bio" (beside the
 # About text).
 photo_position: "below"
+# Pale sketch behind your name at the top of the page. "image" is the file in
+# assets/img/; the other lines are the photo credit shown in the footer (the
+# photo's licence requires it). Delete this whole block for a plain white top.
+intro_bg:
+  image: "/assets/img/intro-sava.jpg"
+  author: "Aleksandr Petukhov"
+  source: "https://commons.wikimedia.org/wiki/File:The_Victor_and_the_Sava_river.jpg"
+  license: "CC BY-SA 4.0"
+  license_url: "https://creativecommons.org/licenses/by-sa/4.0/"
 description: >-
   Dimitrije Ruzic — Associate Professor of Economics at INSEAD. Research in
   macroeconomics and international trade: how differences across firms shape
