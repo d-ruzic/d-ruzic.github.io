@@ -32,7 +32,7 @@
   </nav>
 
   {% assign bg = page.intro_bg | default: site.intro_bg %}
-  <header id="top" class="intro intro-photo-{{ page.photo_position | default: site.photo_position | default: "below" }}{% if bg %} intro-has-bg{% endif %}"{% if bg %} style="background-image: url('{{ bg.image }}')"{% endif %}>
+  <header id="top" class="intro intro-photo-{{ page.photo_position | default: site.photo_position | default: "below" }}{% if bg %} intro-has-bg{% endif %}"{% if bg %} style="background-image: url('{{ bg.image }}'){% if bg.position %}; background-position: {{ bg.position }}{% endif %}"{% endif %}>
     <div class="intro-body">
       {% include photo.html where="above" %}
       {% include photo.html where="name" %}
