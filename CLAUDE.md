@@ -83,7 +83,8 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
    - background photo for the intro (e.g. Fontainebleau bouldering), as in
      Lin's theme — put it in `assets/img/`, keep it < ~300 KB
    - headshot in the About section
-   - accent colour (`--accent` in `style.css`, currently theme green `#42dca3`)
+   - accent colour: light theme is now the default (2026-10-12), accent INSEAD-style
+     green `#00684a`; trial page `/preview-blue/` (royal blue `#1f3c88`) awaits a verdict
    - possibly show the user 2–3 alternative layouts/themes before settling
 2. **Point druzic.com at the site** (only when the user is happy):
    - In the repo: add a file `CNAME` containing `druzic.com`; set

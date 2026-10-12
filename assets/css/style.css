@@ -1,4 +1,4 @@
-/* Look modeled on the Jekyll "grayscale" / "Personal" theme: dark page,
+/* Look modeled on the Jekyll "grayscale" / "Personal" theme, in a light version:
    Montserrat headings, Lora body text. Fonts are served from assets/fonts. */
 
 @font-face { font-family: "Lora"; src: url("../fonts/lora.woff2") format("woff2");
@@ -9,47 +9,27 @@
   font-weight: 400 700; font-style: normal; font-display: swap; }
 
 :root {
-  --bg: #000;
-  --panel: #111;
-  --text: #fff;
-  --muted: #b5b5b5;
-  --accent: #42dca3;   /* link colour; change here to restyle the whole site */
-  --line: #333;
-  --accent-hover: #1d9b6c;
-  --on-accent: #000;          /* text on a green button when hovered */
-  --nav-bg: rgba(0, 0, 0, 0.85);
-  --nav-line: rgba(255, 255, 255, 0.15);
-  --intro-bg: radial-gradient(ellipse 60% 60% at 50% 45%, #2b2b2b 0%, #000 100%);
-  --serif: "Lora", Georgia, "Times New Roman", serif;
-  --sans: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-}
-
-/* Light themes (theme: "light" or "light-band" in _config.yml). The green is
-   a darker shade of the same colour so links stay readable on white. */
-.theme-light, .theme-light-band {
   --bg: #fff;
   --panel: #f3f5f4;
   --text: #111;
   --muted: #555;
-  --accent: #14855b;
-  --accent-hover: #0b5c3e;
-  --on-accent: #fff;
+  --accent: #00684a;   /* link colour (INSEAD-style dark green); change here to restyle the whole site */
+  --accent-hover: #004431;
+  --on-accent: #fff;          /* text on a button when hovered */
   --line: #ddd;
   --nav-bg: rgba(255, 255, 255, 0.92);
   --nav-line: rgba(0, 0, 0, 0.12);
   --intro-bg: #fff;
+  --serif: "Lora", Georgia, "Times New Roman", serif;
+  --sans: "Montserrat", "Helvetica Neue", Arial, sans-serif;
 }
-/* light-band: white page, but the top bar and the name/photo area stay black */
-.theme-light-band .nav, .theme-light-band .intro {
-  --text: #fff;
-  --muted: #b5b5b5;
-  --accent: #42dca3;
-  --line: #333;
-  --nav-bg: rgba(0, 0, 0, 0.85);
-  --nav-line: rgba(255, 255, 255, 0.15);
-  --intro-bg: radial-gradient(ellipse 60% 60% at 50% 45%, #2b2b2b 0%, #000 100%);
+
+/* Alternative accent (theme: "blue" in _config.yml): dark royal blue */
+.theme-blue {
+  --accent: #1f3c88;
+  --accent-hover: #142863;
+  --panel: #f3f4f7;
 }
-.theme-light-band .intro { padding-bottom: 50px; }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
