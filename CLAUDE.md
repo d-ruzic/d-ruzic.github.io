@@ -87,9 +87,8 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
    - intro background: pale blue pencil-style sketches of Pobednik made from
      Wikimedia Commons photos (CC BY/BY-SA, so the footer credits photographer
      and licence via `intro_bg:` in `_config.yml`). Default now: Sava river view.
-     User rejected a 12-option gallery of close-ups (deleted). Now trialling
-     four photos the user picked: `/preview-bg-1/` … `/preview-bg-4/`
-     (optional `position:` in `intro_bg` shifts the crop on phones).
+     After trying a gallery and four more photos, the user kept the Sava view
+     (2026-10-12). Default and settled.
    - possibly show the user 2–3 alternative layouts/themes before settling
 2. **Point druzic.com at the site** (only when the user is happy):
    - In the repo: add a file `CNAME` containing `druzic.com`; set
