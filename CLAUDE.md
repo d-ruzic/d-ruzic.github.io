@@ -83,8 +83,12 @@ Copied verbatim on 2026-10-11 from the Google Site (`www.druzic.com`: `/home`,
    - background photo for the intro (e.g. Fontainebleau bouldering), as in
      Lin's theme — put it in `assets/img/`, keep it < ~300 KB
    - headshot in the About section
-   - accent colour: light theme is now the default (2026-10-12), accent INSEAD-style
-     green `#00684a`; trial page `/preview-blue/` (royal blue `#1f3c88`) awaits a verdict
+   - accent colour: light theme with dark royal blue `#1f3c88` is the default (2026-10-12)
+   - intro background: pale blue pencil-style sketches of Pobednik made from
+     Wikimedia Commons photos (CC BY-SA, so the footer credits the photographer
+     and licence). Trials `/preview-bg-kalemegdan/` and `/preview-bg-sava/` await
+     a verdict; to adopt one, move its `intro_bg:` block into `_config.yml`.
+     Sketch recipe (Pillow, colour-dodge): scratchpad scripts, not in repo
    - possibly show the user 2–3 alternative layouts/themes before settling
 2. **Point druzic.com at the site** (only when the user is happy):
    - In the repo: add a file `CNAME` containing `druzic.com`; set

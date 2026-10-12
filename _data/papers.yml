@@ -49,9 +49,9 @@ published:
     links:
       - label: "Working Paper"
         url: "/papers/CLRS_Superstars_Supervillains_Web.pdf"
-      - label: "NBER Working Paper"
+      - label: "NBER"
         url: "https://www.nber.org/papers/w32648"
-      - label: "CEPR Working Paper"
+      - label: "CEPR"
         url: "https://cepr.org/publications/dp19207"
 
   - title: "Micro and Macro Perspectives on Production-Based Markups"
@@ -74,7 +74,7 @@ published:
     links:
       - label: "Working Paper"
         url: "/papers/FGRT_Markups_Web.pdf"
-      - label: "CEPR Working Paper"
+      - label: "CEPR"
         url: "https://cepr.org/publications/dp20628"
 
   - title: "The Factor Bias of External Inputs: Implications for Substitution between Capital and Labor"
@@ -95,7 +95,7 @@ published:
     links:
       - label: "Working Paper"
         url: "/papers/Ruzic_FBX_Web.pdf"
-      - label: "CEPR Working Paper"
+      - label: "CEPR"
         url: "https://cepr.org/publications/dp21591"
 
   - title: "The Productivity Slowdown in Advanced Economies: Common Shocks or Common Trends?"
@@ -142,7 +142,7 @@ published:
         url: "https://doi.org/10.1093/jeea/jvac046"
       - label: "Working Paper"
         url: "/papers/BEFRL_current.pdf"
-      - label: "NBER Working Paper"
+      - label: "NBER"
         url: "https://www.nber.org/papers/w26117"
 
   - title: "Returns to Scale, Productivity Measurement, and Trends in U.S. Manufacturing Misallocation"

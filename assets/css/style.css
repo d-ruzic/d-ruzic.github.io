@@ -10,11 +10,11 @@
 
 :root {
   --bg: #fff;
-  --panel: #f3f5f4;
+  --panel: #f3f4f7;
   --text: #111;
   --muted: #555;
-  --accent: #00684a;   /* link colour (INSEAD-style dark green); change here to restyle the whole site */
-  --accent-hover: #004431;
+  --accent: #1f3c88;   /* link colour (dark royal blue); change here to restyle the whole site */
+  --accent-hover: #142863;
   --on-accent: #fff;          /* text on a button when hovered */
   --line: #ddd;
   --nav-bg: rgba(255, 255, 255, 0.92);
@@ -22,13 +22,6 @@
   --intro-bg: #fff;
   --serif: "Lora", Georgia, "Times New Roman", serif;
   --sans: "Montserrat", "Helvetica Neue", Arial, sans-serif;
-}
-
-/* Alternative accent (theme: "blue" in _config.yml): dark royal blue */
-.theme-blue {
-  --accent: #1f3c88;
-  --accent-hover: #142863;
-  --panel: #f3f4f7;
 }
 
 * { box-sizing: border-box; }
@@ -74,6 +67,16 @@ a:hover, a:focus { color: var(--accent-hover); }
   font-size: clamp(36px, 8vw, 88px); line-height: 1.1;
 }
 .intro-text { font-size: clamp(18px, 2.5vw, 24px); margin: 0; color: var(--muted); }
+
+/* Sketch background behind the name (intro_bg in _config.yml). Positioned so
+   the Pobednik column stays in view on narrow phone screens too. */
+.intro-has-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% bottom;
+  padding-bottom: 60px;
+}
+.footer .credit { font-size: 12px; }
 
 /* Photo beside the name (photo_position: name) */
 .intro-photo-name .intro-body {
