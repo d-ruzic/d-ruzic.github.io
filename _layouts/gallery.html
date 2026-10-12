@@ -13,13 +13,13 @@
     .gal h1 { font-family: var(--sans); font-size: 28px; margin: 0 0 8px; }
     .gal > p { color: var(--muted); margin: 0 0 32px; }
     .opt { margin: 0 0 48px; }
-    .opt h2 { font-family: var(--sans); font-size: 22px; margin: 0 0 10px; color: var(--accent); }
+    .opt h2 { text-align: left; font-family: var(--sans); font-size: 22px; margin: 0 0 10px; color: var(--accent); }
     .pair { display: flex; gap: 16px; align-items: flex-start; }
     .mock { border: 1px solid var(--line); border-radius: 6px; overflow: hidden;
       background-color: #fff; background-repeat: no-repeat; background-size: cover;
       background-position: 30% bottom; text-align: center;
       display: flex; flex-direction: column; align-items: center; justify-content: center; }
-    .mock.desk { flex: 1 1 auto; aspect-ratio: 2.1; padding: 4% 0 2%; }
+    .mock.desk { flex: 1 1 auto; min-width: 0; aspect-ratio: 2.1; padding: 12px 0; }
     .mock.phone { flex: 0 0 180px; aspect-ratio: 0.62; padding: 10px; }
     .mock b { font-family: var(--sans); text-transform: uppercase; letter-spacing: 2px; line-height: 1.1; }
     .mock.desk b { font-size: clamp(16px, 4vw, 44px); }
@@ -27,8 +27,8 @@
     .mock span { color: var(--muted); }
     .mock.desk span { font-size: clamp(9px, 1.3vw, 14px); margin-top: 1%; }
     .mock.phone span { font-size: 9px; margin-top: 4px; }
-    .mock img { border-radius: 50%; object-fit: cover; }
-    .mock.desk img { width: 13%; aspect-ratio: 1; margin-top: 3%; }
+    .mock img { border-radius: 50%; object-fit: cover; flex: none; max-width: none; }
+    .mock.desk img { width: 64px; height: 64px; margin-top: 14px; }
     .mock.phone img { width: 70px; height: 70px; margin-top: 10px; }
     .opt small { display: block; margin-top: 6px; color: var(--muted); font-family: var(--sans); font-size: 12px; }
     @media (max-width: 600px) { .pair { flex-direction: column; } .mock.desk { width: 100%; } }
@@ -42,13 +42,16 @@
     <div class="opt">
       <h2>{{ o.letter }}</h2>
       <div class="pair">
-        {% for shape in "desk,phone" | split: "," %}
-        <div class="mock {{ shape }}" style="background-image: url('{{ o.image }}')">
+        <div class="mock desk" style="background-image: url('{{ o.image }}')">
           <b>{{ site.title }}</b>
           <span>{{ site.position }}, {{ site.institution }}<br>{{ site.affiliation }}</span>
           <img src="{{ site.photo }}" alt="">
         </div>
-        {% endfor %}
+        <div class="mock phone" style="background-image: url('{{ o.image }}')">
+          <b>{{ site.title }}</b>
+          <span>{{ site.position }}, {{ site.institution }}<br>{{ site.affiliation }}</span>
+          <img src="{{ site.photo }}" alt="">
+        </div>
       </div>
       <small>Photo: <a href="{{ o.source }}">{{ o.author }}</a>, <a href="{{ o.license_url }}">{{ o.license }}</a></small>
     </div>
